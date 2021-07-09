@@ -21,7 +21,16 @@
         .caja-texto {
             border-style: double;
             width: auto;
-            height: auto;
+            height: 90px;
+            text-align: center;
+            background-color: #ffffff;
+            font-size: auto;
+        }
+        
+        .caja-resultado {
+            border-style: double;
+            width: auto;
+            height: 90px;
             text-align: center;
             background-color: #ffffff;
             font-size: auto;
@@ -31,95 +40,60 @@
             color: #1883ba;
             background-color: #ffffff;
         }
+        
+        .imagen-fondo {
+            background-image: url("numeros.jpg");
+        }
     </style>
 </head>
 
-<body style="background-color: aquamarine;">
-    <h2 style="text-align: center;">Ejercicio Teclado</h2>
-    <div id="numero"></div>
-    <div id="letra"></div>
-    <div style="width:800px; margin:0 auto;">
-        <button class="boton_personalizado" id="btnEsc">ESC</button>
-        <button class="boton_personalizado" id="btnGrade">°</button>
-        <button class="boton_personalizado" id="btn7">7</button>
-        <button class="boton_personalizado" id="btn8">8</button>
-        <button class="boton_personalizado" id="btn9">9</button>
-        <button class="boton_personalizado" id="btnApos">'</button>
-        <button class="boton_personalizado" id="btnAbrirInter">¿</button>
-        <button class="boton_personalizado" id="btnBorrar">Borrar</button>
-        <BR></BR>
-        <button class="boton_personalizado" id="btn4">4</button>
-        <button class="boton_personalizado" id="btn5">5</button>
-        <button class="boton_personalizado" id="btn6">6</button>
-        <button class="boton_personalizado" id="btnGuion">-</button>
-        <button class="boton_personalizado" id="btn">Tab</button>
-        <button class="boton_personalizado" id="btnQ">Q</button>
-        <button class="boton_personalizado" id="btnW">W</button>
-        <button class="boton_personalizado" id="btnE">E</button>
-        <button class="boton_personalizado" id="btnR">R</button>
-        <button class="boton_personalizado" id="btnT">T</button>
-        <button class="boton_personalizado" id="btnY">Y</button>
-        <button class="boton_personalizado" id="btnU">U</button>
-        <button class="boton_personalizado" id="btnI">I</button>
-        <button class="boton_personalizado" id="btnO">O</button>
-        <button class="boton_personalizado" id="btnP">P</button>
-        <button class="boton_personalizado" id="btnTilde">´</button>
-        <button class="boton_personalizado" id="btnEnter">Enter</button>
-        <BR></BR>
-        <button class="boton_personalizado" id="btn1">1</button>
-        <button class="boton_personalizado" id="btn2">2</button>
-        <button class="boton_personalizado" id="btn3">3</button>
-        <button class="boton_personalizado" id="btnMas">+</button>
-        <BR></BR>
-        <button class="boton_personalizado" id="btn0">0</button>
-        <button class="boton_personalizado" id="btnPunto">.</button>
-        <button class="boton_personalizado" id="btnIgual">=</button>
-        <button class="boton_personalizado" id="btnA">A</button>
-        <button class="boton_personalizado" id="btnS">S</button>
-        <button class="boton_personalizado" id="btnD">D</button>
-        <button class="boton_personalizado" id="btnF">F</button>
-        <button class="boton_personalizado" id="btnG">G</button>
-        <button class="boton_personalizado" id="btnH">H</button>
-        <button class="boton_personalizado" id="btnJ">J</button>
-        <button class="boton_personalizado" id="btnK">K</button>
-        <button class="boton_personalizado" id="btnL">L</button>
-        <button class="boton_personalizado" id="btnNE">Ñ</button>
-        <button class="boton_personalizado" id="btn[">[</button>
-        <button class="boton_personalizado" id="btn]">]</button>
-        <BR></BR>
-        <button class="boton_personalizado" id="btnMayusIzq">Mayus</button>
-        <button class="boton_personalizado" id="btn<"><</button>
-        <button class="boton_personalizado" id="btnZ">Z</button>
-        <button class="boton_personalizado" id="btnX">X</button>
-        <button class="boton_personalizado" id="btnC">C</button>
-        <button class="boton_personalizado" id="btnV">V</button>
-        <button class="boton_personalizado" id="btnB">B</button>
-        <button class="boton_personalizado" id="btnN">N</button>
-        <button class="boton_personalizado" id="btnM">M</button>
-        <button class="boton_personalizado" id="btnComa">,</button>
-        <button class="boton_personalizado" id="btnPunto">.</button>
-        <button class="boton_personalizado" id="btnUp">↑</button>
-        <button class="boton_personalizado" id="btnMayusDer">Mayus</button>
-        <button class="boton_personalizado" id="btnMayusIzq">Supr</button>
-        <BR></BR>
-        <button class="boton_personalizado" id="btnFn">Fn</button>
-        <button class="boton_personalizado" id="btnCtrl">Ctrl</button>
-        <button class="boton_personalizado" id="btnWin">Win</button>
-        <button class="boton_personalizado" id="btnAlt">Alt</button>
-        <button class="boton_personalizado" id="btnEspacio" style="width:110px; height: 40px;">                  </button>
-        <button class="boton_personalizado" id="btnAltGr">AltGr</button>
-        <button class="boton_personalizado" id="btnCtrl">Ctrl</button>
-        <button class="boton_personalizado" id="btnIzq">←</button>
-        <button class="boton_personalizado" id="btnAbajo">↓</button>
-        <button class="boton_personalizado" id="btnDer">→</button>
+<body class="imagen-fondo">
+    <h2 style="text-align: center; color: white">Ejercicio Teclado</h2>
+    <div style="width:800px; margin:0 auto; ">
+        <p style="color: white">Numero 1</p>
+        <div class="caja-texto" id="texto1"></div>
+    </div>
+    <div style="width:800px; margin:0 auto; ">
+        <p style="color: white">Numero 2</p>
+        <div class="caja-texto" id="texto2"></div>
+    </div>
+    <div style="width:800px; margin:0 auto; ">
+        <p style="color: white">Resultado</p>
+        <div class="caja-resultado" id="resultado"></div>
+    </div>
 
-    </div>
-    <div style="width:800px; margin:0 auto;">
-        <p>Texto que escribes</p>
-        <div class="caja-texto" id="texto"></div>
-    </div>
-    <h2 style="text-align: center;">Desarrollado por: Juan Felipe Ramírez Sánchez</h2>
-    <script type="text/javascript" src="ejercicio.js"></script>
+    <br></br>
+    < <div style="width:800px; margin:0 auto; text-align: center;">
+        <button class="boton_personalizado " id="btnPorcent">%</button>
+        <button class="boton_personalizado " id="btnDiv">/</button>
+        <button class="boton_personalizado " id="btnBorrarTodo">C</button>
+        <button class="boton_personalizado " id="btnBorrar">AC</button>
+        <BR></BR>
+        <button class="boton_personalizado " id="btn7">7</button>
+        <button class="boton_personalizado " id="btn8">8</button>
+        <button class="boton_personalizado " id="btn9">9</button>
+        <button class="boton_personalizado " id="btnMulti ">X</button>
+        <BR></BR>
+        <button class="boton_personalizado " id="btn4">4</button>
+        <button class="boton_personalizado " id="btn5">5</button>
+        <button class="boton_personalizado " id="btn6">6</button>
+        <button class="boton_personalizado " id="btnGuion ">-</button>
+        <BR></BR>
+        <button class="boton_personalizado " id="btn1">1</button>
+        <button class="boton_personalizado " id="btn2">2</button>
+        <button class="boton_personalizado " id="btn3">3</button>
+        <button class="boton_personalizado " id="btnMas">+</button>
+        <BR></BR>
+        <button class="boton_personalizado " id="btn0">0</button>
+        <button class="boton_personalizado " id="btnPunto">.</button>
+        <button class="boton_personalizado " id="btnIgual">=</button>
+        <BR></BR>
+        <button class="boton_personalizado " id="btnPrimero">Primero numero</button>
+        <button class="boton_personalizado " id="btnSegundo">Segundo numero</button>
+
+        </div>
+        <h2 style="text-align: center; color: white">Desarrollado por: Juan Felipe Ramírez Sánchez</h2>
+        <script type="text/javascript " src="ejercicio.js "></script>
 </body>
 
 </html>

@@ -1,34 +1,9 @@
 //variables globales
-let datos = document.getElementById("datos");
-let letra = document.getElementById("letra");
-let numero = document.getElementById("numero");
-let btnA = document.getElementById("btnA");
-let btnB = document.getElementById("btnB");
-let btnC = document.getElementById("btnC");
-let btnD = document.getElementById("btnD");
-let btnE = document.getElementById("btnE");
-let btnF = document.getElementById("btnF");
-let btnG = document.getElementById("btnG");
-let btnH = document.getElementById("btnH");
-let btnI = document.getElementById("btnI");
-let btnJ = document.getElementById("btnJ");
-let btnK = document.getElementById("btnK");
-let btnL = document.getElementById("btnL");
-let btnM = document.getElementById("btnM");
-let btnN = document.getElementById("btnN");
-let btnNE = document.getElementById("btnNE");
-let btnO = document.getElementById("btnO");
-let btnP = document.getElementById("btnP");
-let btnQ = document.getElementById("btnQ");
-let btnR = document.getElementById("btnR");
-let btnS = document.getElementById("btnS");
-let btnT = document.getElementById("btnT");
-let btnU = document.getElementById("btnU");
-let btnV = document.getElementById("btnV");
-let btnW = document.getElementById("btnW");
-let btnX = document.getElementById("btnX");
-let btnY = document.getElementById("btnY");
-let btnZ = document.getElementById("btnZ");
+let num1 = document.getElementById("texto1");
+let num2 = document.getElementById("texto2");
+let btnPrimero = document.getElementById("btnPrimero");
+let btnSegundo = document.getElementById("btnSegundo");
+let resul = document.getElementById("resultado");
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
@@ -42,160 +17,136 @@ let btn0 = document.getElementById("btn0");
 let btnEspacio = document.getElementById("btnEspacio");
 let btnEnter = document.getElementById("btnEnter");
 
+let op = document.getElementById("op");
+
+const suma = () => {
+
+    let resultado = 0;
+
+    resultado = num1 + num2;
+
+    resul.innerHTML += resultado;
+
+}
 
 //Eventos
-btnNE.onclick = function() {
-    texto.innerHTML += "ñ";
+btnPrimero.onclick = function() {
+    btn1.onclick = function() {
+        texto1.innerHTML += "1";
+    };
+
+    btn2.onclick = function() {
+        texto1.innerHTML += "2";
+    };
+
+    btn3.onclick = function() {
+        texto1.innerHTML += "3";
+    };
+
+    btn4.onclick = function() {
+        texto1.innerHTML += "4";
+    };
+
+    btn5.onclick = function() {
+        texto1.innerHTML += "5";
+    };
+
+    btn6.onclick = function() {
+        texto1.innerHTML += "6";
+    };
+
+    btn7.onclick = function() {
+        texto1.innerHTML += "7";
+    };
+
+    btn8.onclick = function() {
+        texto1.innerHTML += "8";
+    };
+
+    btn9.onclick = function() {
+        texto1.innerHTML += "9";
+    };
+
+    btn0.onclick = function() {
+        texto1.innerHTML += "0";
+    };
 };
 
-btnA.onclick = function() {
-    texto.innerHTML += "a";
-};
+btnSegundo.onclick = function() {
+    btn1.onclick = function() {
+        texto2.innerHTML += "1";
+    };
 
-btnB.onclick = function() {
-    texto.innerHTML += "b";
-};
+    btn2.onclick = function() {
+        texto2.innerHTML += "2";
+    };
 
-btnC.onclick = function() {
-    texto.innerHTML += "c";
-};
+    btn3.onclick = function() {
+        texto2.innerHTML += "3";
+    };
 
-btnD.onclick = function() {
-    texto.innerHTML += "d";
-};
+    btn4.onclick = function() {
+        texto2.innerHTML += "4";
+    };
 
-btnE.onclick = function() {
-    texto.innerHTML += "e";
-};
+    btn5.onclick = function() {
+        texto2.innerHTML += "5";
+    };
 
-btnF.onclick = function() {
-    texto.innerHTML += "f";
-};
+    btn6.onclick = function() {
+        texto2.innerHTML += "6";
+    };
 
-btnG.onclick = function() {
-    texto.innerHTML += "g";
-};
+    btn7.onclick = function() {
+        texto2.innerHTML += "7";
+    };
 
-btnH.onclick = function() {
-    texto.innerHTML += "h";
-};
+    btn8.onclick = function() {
+        texto2.innerHTML += "8";
+    };
 
-btnI.onclick = function() {
-    texto.innerHTML += "i";
-};
+    btn9.onclick = function() {
+        texto2.innerHTML += "9";
+    };
 
-btnJ.onclick = function() {
-    texto.innerHTML += "j";
-};
+    btn0.onclick = function() {
+        texto2.innerHTML += "0";
+    };
+}
 
-btnK.onclick = function() {
-    texto.innerHTML += "k";
-};
 
-btnL.onclick = function() {
-    texto.innerHTML += "l";
-};
-
-btnM.onclick = function() {
-    texto.innerHTML += "m";
-};
-
-btnN.onclick = function() {
-    texto.innerHTML += "n";
-};
-
-btnO.onclick = function() {
-    texto.innerHTML += "o";
-};
-
-btnP.onclick = function() {
-    texto.innerHTML += "p";
-};
-
-btnQ.onclick = function() {
-    texto.innerHTML += "q";
-};
-
-btnR.onclick = function() {
-    texto.innerHTML += "r";
-};
-
-btnS.onclick = function() {
-    texto.innerHTML += "s";
-};
-
-btnT.onclick = function() {
-    texto.innerHTML += "t";
-};
-
-btnU.onclick = function() {
-    texto.innerHTML += "u";
-};
-
-btnV.onclick = function() {
-    texto.innerHTML += "v";
-};
-
-btnW.onclick = function() {
-    texto.innerHTML += "w";
-};
-
-btnX.onclick = function() {
-    texto.innerHTML += "x";
-};
-
-btnY.onclick = function() {
-    texto.innerHTML += "y";
-};
-
-btnZ.onclick = function() {
-    texto.innerHTML += "z";
-};
-
-btn1.onclick = function() {
-    texto.innerHTML += "1";
-};
-
-btn2.onclick = function() {
-    texto.innerHTML += "2";
-};
-
-btn3.onclick = function() {
-    texto.innerHTML += "3";
-};
-
-btn4.onclick = function() {
-    texto.innerHTML += "4";
-};
-
-btn5.onclick = function() {
-    texto.innerHTML += "5";
-};
-
-btn6.onclick = function() {
-    texto.innerHTML += "6";
-};
-
-btn7.onclick = function() {
-    texto.innerHTML += "7";
-};
-
-btn8.onclick = function() {
-    texto.innerHTML += "8";
-};
-
-btn9.onclick = function() {
-    texto.innerHTML += "9";
-};
-
-btn0.onclick = function() {
+btnPorcent.onclick = function() {
     texto.innerHTML += "0";
 };
 
-btnEspacio.onclick = function() {
+btnDiv.onclick = function() {
+    texto.innerHTML += "0";
+};
+
+btnBorrarTodo.onclick = function() {
     texto.innerHTML += " ";
 };
 
-btnEnter.onclick = function() {
+btnBorrar.onclick = function() {
+    texto.innerHTML += "<br>";
+};
+
+btnMulti.onclick = function() {
+    texto.innerHTML += "<br>";
+};
+
+btnGuion.onclick = function() {
+    texto.innerHTML += "<br>";
+};
+
+btnMas.onclick = function() {
+    suma();
+};
+
+btnPunto.onclick = function() {
+    texto.innerHTML += "<br>";
+};
+
+btnIgual.onclick = function() {
     texto.innerHTML += "<br>";
 };
